@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+
+.main {
+    background-image: url(Assets/images/bg.jpg);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1000px 100vw);
+    
+
+}
+
+.main .box {
+    background-color: black;
+    opacity: 0.55;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav img {
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 30px;
+    padding: 0 23px;
+
+
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 550;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.line {
+    height: 7px;
+    background-color: rgb(255, 115, 0);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 15px;
+    font-weight: 400;
+    background-color: rgba(246, 238, 238, 0.3);
+    color: white;
+    border: 1px solid rgba(246, 238, 238, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red-get {
+    background-color: red;
+    color: white;
+    padding: 6px 38px;
+    font-size: 22px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    margin-right: 0px;
+}
+
+.main input {
+    padding: 12px 150px 8px 14px;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.3)
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.buttons button{
+    margin-right: 10px;
+}
+
+h4{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 40px 10px 15px 80px;
+}
+.movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.poster img{
+    border-radius: 12px;
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+
+.poster img:hover {
+    transform: scale(1.1); 
+    filter: brightness(1.2);
+}
+
+.number{
+    line-height: 1;
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 80px;
+    right: 200px;
+    top: 80px;
+    transition: transform 0.3s ease;
+}
+
+.movies:hover .number {
+    transform: scale(1.1); 
+}
+.arrow-button{
+    height: 125px;
+    width: 27px;
+    font-size: 26px;
+    border: none;
+    border-radius: 21px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    margin-left: -25px;
+    cursor: pointer;
+}
+.arrow-button:hover{
+    background-color:  rgb(80, 80, 80);;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.box-text{
+    width: 20%;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom,   rgb(1, 1, 41), rgba(93, 2, 158, 0.8));
+    height: 320px;
+    padding: 25px;
+    margin: 6px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.boxes .box-text h5 {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.boxes .box-text p{
+    color: rgb(206, 206, 206);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 12px;
+}
+
+.pic {
+    position: absolute; 
+    bottom: 10px; 
+    left: 185px; 
+    width: 70px; 
+    height: auto; 
+}
+
+.faqbox{
+    display: flex;
+    background-color: #2e2e2e;
+    padding: 24px;
+    margin: 15px 200px;
+   width: 900px;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 1s ease-out;
+    color: white;
+}
+
+.faqbox:hover{
+    background-color: #414141;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+.footeritems{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.footer a{
+    color: white;
+    font-size: 14px;
+}
+footer .questions{
+    padding: 34px 0px;
+}
+
+.email p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 12px;
+    margin-top: 50px;
+}
+
+.email .hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.email  input {
+    padding: 14px 225px 10px 15px;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.3)
+}
+.buttons button{
+    margin-right: 10px;
+}
+
+.btn-eng {
+    padding: 5px 15px;
+    font-weight: 400;
+    background-color: rgba(246, 238, 238, 0.15);
+    color: white;
+    border: 1px solid rgba(246, 238, 238, 0.3);
+    cursor: pointer;
+    margin-left: 260px;
+    border-radius: 3px;
+    margin-top: 12px;
+    width: 120px;
+}
+
+.pak p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 260px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:1024px) {
+    .main{
+        width: 70rem;
+    }
+
+    .number{
+        right: 18%;
+        height: 55px;
+    }
+
+    .poster img{
+        height: 220px;
+    }
+
+    .movies{
+        margin-left: 110px;
+    }
+
+    .box-text{
+        width: 30%;
+        left: 5%;
+    }
+    .pic{
+        left: 65%;
+    }
+
+    .faqbox{
+        margin-left: 120px;
+    }
+
+    .email p{
+        margin-left: 110px;
+    }
+
+    .email .hero-btns{
+        margin-left: 100px
+       }
+    }
+
+    @media screen and (max-width:768px) {
+        .movies{
+            margin-left: 50%;
+        }
+
+        .number{
+            right: 45%;
+        }
+
+        .boxes{
+            width: 130%;
+        }
+
+        .email p{
+            position: relative;
+            left: 20%;
+        }
+
+        .email .hero-btns{
+            position: relative;
+            left: 18%;
+        }
+
+        .footer{
+            gap: 155px;
+        }
+
+        .footeritems a{
+            font-size: 16px;
+        }
+
+        nav{
+            max-width: 70%;
+        }
+    }
+
+    @media screen and (max-width:425px) {
+
+        .poster img{
+            height: 230px;
+            position: relative;
+            left: 155%;
+        }
+
+        .number{
+            left: 33%;
+        }
+
+        h4{
+            font-size: 30px;
+        }
+
+        .arrow-button{
+            position: relative;
+            left: 235px;
+        }
+
+        .boxes{
+            width: 235%;
+        }
+        .email p{
+            left: 60%;
+            font-size: 18px;
+        width: 100%;
+    }
+
+    .email .hero-btns{
+        left: 70%;
+    }
+    .btn-red-get{
+        padding: 0px 60px;
+        font-size: 20px;
+    }
+    .email input{
+        padding: 28px 225px 16px 20px;
+        font-size: 14px;
+    }
+    .buttons button{
+        margin-left: 6em;
+    }
+
+    .pak p{
+        font-size: 16px;
+        margin-left: 5em;
+    }
+        }
+
+        @media screen and (max-width:375px) {
+            .email p{
+                font-size: 20px;
+            }
+
+            .email .hero-btns{
+                left: 80%;
+            }
+            .footer{
+                margin-left: 35px;
+            }
+
+            h4{
+                font-size: 26px;
+            }
+            .boxes{
+                width: 280%;
+                margin-left: -15px;
+            }
+            .poster img{
+                margin-left: 10px;
+            }
+            .number{
+                left: 65%;
+            }
+
+            .movies{
+                margin-left: 65%;
+            }
+            .arrow-button{
+                left: 190%;
+            }
+            .buttons button{
+                margin-left: 6em;
+            }
+    
+            .pak p{
+                font-size: 16px;
+                margin-left: 5em;
+            }
+    }
+
+    @media screen and (max-width:320px) {
+        .movies{
+margin-left: 90%;
+        }
+        .number{
+            left: 6rem;
+        }
+        .poster img{
+            height: 225px;
+        }
+        .arrow-button{
+            left: 10em;
+        }
+        .boxes{
+            width: 330%;
+        }
+
+        .email p{
+            width: 160%;
+        }
+        .email .hero-btns{
+            left: 100%;
+        }
+        footer .questions{
+            font-size: 18px;
+        }
+        .footer{
+            margin-left: 72px;
+        }
+        .footeritems a{
+            font-size: 18px;
+        }
+        .buttons button{
+            margin-left: 6em;
+        }
+
+        .pak p{
+            font-size: 16px;
+            margin-left: 5em;
+        }
+    }
